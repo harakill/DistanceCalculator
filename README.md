@@ -3,7 +3,7 @@
 
 * Applicarion running
 <p align="center">
-  <img src="https://github.com/harakill/DistanceCalculator/blob/main/Docs/Output.png" width="800" title="hover text">
+  <img src="https://github.com/harakill/DistanceCalculator/blob/main/Docs/Output_00.png" width="800" title="1836 ms">
 </p>
 
 
