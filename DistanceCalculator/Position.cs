@@ -1,6 +1,9 @@
 ﻿
 namespace DistanceCalculator
 {
+    /// <summary>
+    /// A class that represent domain object
+    /// </summary>
     internal class Position
     {
         internal int PositionId { get; set; }

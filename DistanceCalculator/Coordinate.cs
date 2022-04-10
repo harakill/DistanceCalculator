@@ -1,6 +1,9 @@
 ﻿
 namespace DistanceCalculator
 {
+    /// <summary>
+    /// Coordinate class to hold latitude and longitude coordination.
+    /// </summary>
     internal class Coordinate
     {
         public Coordinate(double latitude, double longitude)

@@ -1,6 +1,9 @@
 ﻿
 namespace DistanceCalculator
 {
+    /// <summary>
+    /// Convenience class for reading byte files
+    /// </summary>
     internal static class FileReader
     {
         private static int index;
@@ -9,6 +12,10 @@ namespace DistanceCalculator
         internal static int Index { get => index; }
         internal static int Length { get => length; }
 
+        /// <summary>
+        /// Read data from system path
+        /// </summary>
+        /// <returns>byte array</returns>
         public static byte[] ReadData()
         {
             using FileStream fs = File.OpenRead(Path.Combine(Directory.GetCurrentDirectory(), "VehiclePositions.dat"));

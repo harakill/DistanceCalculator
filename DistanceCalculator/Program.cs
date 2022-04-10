@@ -1,6 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-using DistanceCalculator;
+﻿using DistanceCalculator;
 using System.Diagnostics;
 
 var stopwatch = Stopwatch.StartNew();
@@ -14,8 +12,7 @@ stopwatch.Restart();
 
 foreach (var vehicle in VehiclesList())
 {
-    var position = DataConverter.StackConvertData(data, FileReader.Index, FileReader.Length, vehicle);
-    //Console.WriteLine(position.Count);
+    var position = DataConverter.ConvertData(data, FileReader.Index, FileReader.Length, vehicle);
     Console.WriteLine($" Distance between { vehicle.Latitude } : { vehicle.Longitude } and { position.Latitude } : { position.Longitude } = { position.Distance } KM with Id { position.PositionId } ");
 }
 
